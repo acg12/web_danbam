@@ -1,0 +1,362 @@
+#banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    height: 100vh;
+}
+
+#banner {
+    background-image: url("../assets/banner.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.info {
+    background-color: #070707;
+    position: relative;
+    left: 8vw;
+    top: -8vw;
+    overflow: hidden;
+    border-top-left-radius: 400px;
+    border-bottom-left-radius: 400px;
+    transition: all 1s ease-in-out;
+    z-index: 100;
+    padding: 4vw;
+    width: 100vw;
+}
+
+.info-outline {
+    padding: 4vw;
+    padding-left: 10vw;
+    position: relative;
+    padding-right: 0;
+    border-top-left-radius: 350px;
+    border-bottom-left-radius: 350px;
+    border: #0000FF 5px solid;
+    box-shadow: 0 0 30px #0000FF, 
+                inset 0 0 30px #0000FF;
+}
+
+.info-text {
+    padding-right: 4vw;
+}
+
+.info-text > .title {
+    font-size: 50px;
+    margin: 0;
+}
+
+#info-img {
+    width: 48vw;
+    border-radius: 45px;
+    z-index: 50;
+}
+
+#recommended {
+    background-color: black;
+    position: absolute;
+    top: -14vw;
+    border-bottom-right-radius: 400px;
+    padding: 4vw;
+    width: 104vw;
+    left: -13vw;
+}
+
+#rec-outline {
+    padding: 4vw;
+    padding-left: 12vw;
+    height: 660px;
+    padding-bottom: 0;
+    border-radius: 30px;
+    border-bottom-right-radius: 350px;
+    border: crimson 5px solid;
+    box-shadow: 0 0 30px red, 
+                inset 0 0 30px red;
+}
+
+#see-all-menu > a {
+    text-decoration: underline;
+    font-size: 18px;
+    color: white;
+    font-family: pop-regular;
+    text-shadow: 0 0 10px gray;
+}
+
+#see-all-menu {
+    padding: 32px;
+    padding-bottom: 0;
+}
+
+#recom-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#recom-title {
+    font-size: 60px;
+    margin: 0;
+}
+
+#recom-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 2vw;
+    justify-content: start;
+    align-content: center;
+}
+
+.recom-card {
+    border-radius: 25px;
+    border-bottom-right-radius: 80px;
+    background-color: white;
+    /* box-shadow: 5px 5px 10px gray; */
+    width: 15vw;
+    height: 480px;
+    position: relative;
+    background-position-x: center;
+    background-size: 150%;
+    filter: brightness(70%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.recom-card:hover {
+    filter: brightness(100%);
+    cursor:pointer;
+}
+
+.recom-card-text {
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+    font-size: 25px;
+    color: white;
+    font-family: pop-medium;
+    text-shadow: 0 0 10px black;
+}
+
+#rec1 {
+    top: 0vh;
+    background-image: url("../assets/rec1.jpg");
+}
+
+#rec2 {
+    top: 48px;
+    background-image: url("../assets/rec2.jpg");
+    animation-delay: .5s;
+}
+
+#rec3 {
+    top: 0vh;
+    background-image: url("../assets/rec3.jpg");
+    animation-delay: 1s;
+}
+
+#rec4 {
+    top: 24px;
+    background-image: url("../assets/rec4.jpg");
+    animation-delay: 1.5s;
+}
+
+#rec5 {
+    top: 12px;
+    background-image: url("../assets/rec5.jpg");
+    animation-delay: 2s;
+} 
+
+#location {
+    position: absolute;
+    background-color: black;
+    border-top-left-radius: 400px;
+    border-bottom-left-radius: 400px;
+    padding: 4vw;
+    top: 520px;
+    left: 8vw;
+    width: 110vw;
+    z-index: -1;
+}
+
+#loc-outline {
+    border-radius: 30px;
+    border-top-left-radius: 350px;
+    border-bottom-left-radius: 350px;
+    border: #FF2CDC 4px solid;
+    box-shadow: 0 0 30px #FF2CDC, 
+                inset 0 0 30px #FF2CDC;
+    padding: 8vw;
+    padding-right: 16vw;
+}
+
+#loc-title {
+    margin: 0;
+    font-size: 50px;
+    padding: 16px;
+}
+
+#loc-map {
+    width: 400px;
+    height: 100px;
+}
+
+#loc-content {
+    width: max-content;
+}
+
+#cant-find {
+    width: 50%;
+    border-left: 3px solid white;
+    padding-left: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 40px;
+    margin: 0;
+}
+
+#cant-find a {
+    color: white;
+}
+
+#foot-cont {
+    position: absolute;
+    top: 1300px;
+    width: 100%;
+}
+
+.city {
+    margin: 2px 30px;
+    margin-top: 24px;
+    font-size: 20px;
+    margin: 16px;
+    font-family: pop-bold;
+}
+
+.branch-card {
+    line-height: 10px;
+    font-size: 16px;
+    padding: 2px 30px;
+}
+
+@media only screen and (max-width: 969px) {
+    #banner-text > h1 {
+        font-size: 60px;
+    }
+
+    #info-img {
+        width: 100%;
+    }
+
+    .info {
+        padding-right: 4vw;
+        position: static;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        padding-left: 4vw;
+        width: auto;
+    }
+
+    .info-outline {
+        padding-right: 4vw;
+        position: static;
+        left: 0;
+        top: 0;
+        padding-left: 4vw;
+        border-radius: 15px;
+    }
+
+    #recommended {
+        position: static;
+        top: 0;
+        left: 0;
+        border-radius: 0px;
+        padding: 4vw;
+        width: auto;
+    }
+
+    #rec-outline {
+        position: static;
+        left: 0;
+        top: 0;
+        border-radius: 15px;
+        padding: 4vw;
+        height: auto;
+    }
+
+    #recom-title > h3 {
+        font-size: 30px;
+    }
+
+    #see-all-menu > a {
+        font-size: 16px;
+    }
+
+    #see-all-menu {
+        padding: 16px;
+    }
+
+    #recom-content {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-row-gap: 2vw;
+    }
+
+    .recom-card {
+        height: 15vh;
+        width: 80vw;
+        background-position-y: center;
+        background-size: 100%;
+        box-shadow: none;
+        border-radius: 15px;
+    }
+
+    #rec1 {
+        top: 0;
+        animation:none;
+    }
+
+    #rec2 {
+        top: 0;
+        animation:none;
+    }
+
+    #rec3 {
+        top: 0;
+        animation:none;
+    }
+
+    #rec4 {
+        top: 0;
+        animation:none;
+    }
+
+    #rec5 {
+        top: 0;
+        animation:none;
+    }
+
+    #location {
+        position: static;
+        border-radius: 0px;
+        width: auto;
+    }
+
+    #loc-outline {
+        position: static;
+        border-radius: 15px;
+        padding: 4vw;
+    }
+
+    #cant-find {
+        border-left: 0;
+        width: 100%;
+    }
+
+    #foot-cont {
+        position: static;
+        padding-top: 100px;
+    }
+}
