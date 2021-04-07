@@ -1,13 +1,12 @@
 body {
   background-image: url(../assets/final2.jpg);
   background-size:cover;
-  
+  background-repeat: no-repeat;
   background-position: center;
-  
  }
   
  input[type=text], select, textarea, input[type=email]{
-     font-family: myfont;  
+     font-family: pop-regular;  
      width: 100%; 
      padding: 12px; 
      border: 1px solid #ccc; 
@@ -20,7 +19,6 @@ body {
   
    input[type=submit] {
      background-color: #4CAF50;
-  
      padding: 12px 20px;
      border: none;
      border-radius: 4px;
@@ -39,8 +37,13 @@ body {
      padding-bottom: 50px;
    }
   
- label, h1,p {
-   font-family: myfont;
+ label,p {
+   font-family: pop-regular;
+   color: white;
+ }
+
+ h1 {
+   font-family: pop-bold;
    color: white;
  }
   
@@ -50,10 +53,8 @@ body {
  }
   
  textarea {
-   font-family: myfont;
+   font-family: pop-regular;
  }
   
- p {
-     font-size: ;
- }
+ 
  
