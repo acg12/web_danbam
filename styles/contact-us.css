@@ -1,60 +1,62 @@
 body {
-  background-image: url(../assets/final2.jpg);
+  /* background-color: blue; */
+  background-image: url("../assets/final2.jpg");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
- }
+}
   
- input[type=text], select, textarea, input[type=email]{
-     font-family: pop-regular;  
-     width: 100%; 
-     padding: 12px; 
-     border: 1px solid #ccc; 
-     border-radius: 4px; 
-     box-sizing: border-box; 
-     margin-top: 6px; 
-     margin-bottom: 16px; 
-     resize: vertical 
-   }
-  
-   input[type=submit] {
-     background-color: #4CAF50;
-     padding: 12px 20px;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
-   }
-   
-   input[type=submit]:hover {
-     background-color: #45a049;
-   }
-   
-   .container {
-     width: 50%;
-     margin:0 auto;
-     border-radius: 5px;
-     padding-top: 130px;
-     padding-bottom: 50px;
-   }
-  
- label,p {
-   font-family: pop-regular;
-   color: white;
- }
+input[type=text], select, textarea, input[type=email]{
+  font-family: pop-regular;  
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
 
- h1 {
-   font-family: pop-bold;
-   color: white;
- }
-  
- #title {
-   text-align: center;
-   color: white;
- }
-  
- textarea {
-   font-family: pop-regular;
- }
+input[type=submit] {
+  background-color: #4CAF50;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  width: 50%;
+  margin:0 auto;
+  border-radius: 5px;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  height: 50%;
+}
+
+label,p {
+  font-family: pop-regular;
+  color: white;
+}
+
+h1 {
+  font-family: pop-bold;
+  color: white;
+}
+
+#title {
+  text-align: center;
+  color: white;
+}
+
+textarea {
+  font-family: pop-regular;
+}
   
  
  
