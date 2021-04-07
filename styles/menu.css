@@ -44,13 +44,13 @@
 }
 
 #promo1 {
-    background-image: url("../assets/Promotion.jpg");
+    background-image: url("../assets/promo.jpg");
     background-size: cover;
     background-position: center center;
 }
 
 #promo2 {
-    background-image: url("../assets/promo2.jpg");
+    background-image: url("../assets/Latest.jpg");
     background-size: cover;
     background-position: center center;
 }
