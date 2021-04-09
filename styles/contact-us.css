@@ -23,6 +23,7 @@ body {
      border: none;
      border-radius: 4px;
      cursor: pointer;
+     color: white;
    }
    
    input[type=submit]:hover {
@@ -56,5 +57,13 @@ body {
    font-family: pop-regular;
  }
   
+ #new1 {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+ #new2{
+   text-align: center;
+ }
  
  

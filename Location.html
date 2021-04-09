@@ -1,45 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/header-footer.css">
+    <link rel="stylesheet" href="./styles/Location.css">
+    <script src="./scripts/jquery-latest.min.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <img src="./assets/logo-header.png" alt="" id="icon" class="img-animate">
+</div>
+<div id="menu-bar">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+<div id="drop-down">
+    <div id="dd-flex">
+        <a class="text-animate dd-text" href="index.html">Home</a>
+        <a class="text-animate dd-text" href="menu.html">Menu</a>
+        <a class="text-animate dd-text" href="about-us.html">About Us</a>
+        <a class="text-animate dd-text" href="location.html">Location</a>
+        <a class="text-animate dd-text" href="contact-us.html">Contact Us</a>
+    </div>
+</div>
+  <h1>Location</h1>
+
+  <p>
+    <strong>Address:</strong>
+    <br>bla bla bla street
+    <br>shshshsh 0900909
+  </p>
   
-  <head>
-    <title>Add Map</title>
+  <p>
+    <strong>Phone:</strong>
+    <br>090909064689
+  </p>
 
-    <style type="text/css">
-      /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;
-        /* The height is 400 pixels */
-        width: 100%;
-        /* The width is the width of the web page */
-      }
-    </style>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-    </script>
-  </head>
-  <body>
-    <h3>My Google Maps Demo</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
-
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
-  </body>
+  <p><iframe src="https://www.google.com/maps/d/embed?mid=1IfgwNYTOQXwkpLyJd_f5iAzda9Jcew4C" width="640" height="480"></iframe></p>
+  
+  <div id="foot-cont">
+    <div id="footer" class="flex-col flex-center">
+        <div id="foot-up" class="flex-row flex-center">
+            <a target="_blank" href="https://www.instagram.com" class="sosmed subtitle">Instagram</a>
+            <a target="_blank" href="https://www.twitter.com" class="sosmed subtitle">Twitter</a>
+            <a target="_blank" href="https://www.facebook.com" class="sosmed subtitle">Facebook</a>
+        </div>
+        <div id="foot-bottom" class="text-animate">
+            <p>&copy 2021 DanBam Indonesia. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./scripts/all.js"></script>
+</body>
 </html>
