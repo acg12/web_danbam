@@ -47,19 +47,19 @@
 }
 
 #promo1 {
-    background-image: url("../assets/promo.jpg");
+    background-image: url("../assets/promo1.jpg");
     background-size: cover;
     background-position: center center;
 }
 
 #promo2 {
-    background-image: url("../assets/Latest.jpg");
+    background-image: url("../assets/promo2.jpg");
     background-size: cover;
     background-position: center center;
 }
 
 #promo3 {
-    background-image: url("../assets/cpick.jpg");
+    background-image: url("../assets/promo3.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -130,7 +130,7 @@
     height: 350px;
     background-color: black;
     padding: 16px;
-    margin: 0 16px;
+    margin: 16px;
     border-radius: 15px;
 }
 
@@ -203,6 +203,11 @@
 
     .categ-title {
         font-size: 40px;
+    }
+
+    .foods {
+        justify-content: center;
+        align-items: center;
     }
 }
 
