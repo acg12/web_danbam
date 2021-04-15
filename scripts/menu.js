@@ -64,6 +64,7 @@ var lightbites = document.getElementById("menu-light");
 var maincourse = document.getElementById("menu-main");
 var drinks = document.getElementById("menu-drinks");
 var desserts = document.getElementById("menu-desserts");
+var choices = document.getElementById("menu").children;
 
 var allmenu = document.getElementById("categ-cont");
 var menu_child = allmenu.children;
@@ -76,6 +77,18 @@ lightbites.onclick = function(e) {
         lb_content.classList.remove("menu-non-active");        
     }
     lb_content.classList.add("menu-active");
+
+    if (!lightbites.classList.contains("choice-active")) {
+        lightbites.classList.add("choice-active");
+    }
+
+    Array.prototype.forEach.call(choices, (choice, i) => {
+        if (choice != lightbites) {
+            if (choice.classList.contains("choice-active")) {
+                choice.classList.remove("choice-active");
+            }
+        }
+    })
 
     Array.prototype.forEach.call(menu_child, (item, i) => {
         if (item != lb_content) {
@@ -97,6 +110,18 @@ maincourse.onclick = function(e) {
     }
     mc_content.classList.add("menu-active");
 
+    if (!maincourse.classList.contains("choice-active")) {
+        maincourse.classList.add("choice-active");
+    }
+
+    Array.prototype.forEach.call(choices, (choice, i) => {
+        if (choice != maincourse) {
+            if (choice.classList.contains("choice-active")) {
+                choice.classList.remove("choice-active");
+            }
+        }
+    })
+
     Array.prototype.forEach.call(menu_child, (item, i) => {
         if (item != mc_content) {
             if (item.classList.contains("menu-active")) {
@@ -117,6 +142,18 @@ drinks.onclick = function(e) {
     }
     dr_content.classList.add("menu-active");
 
+    if (!drinks.classList.contains("choice-active")) {
+        drinks.classList.add("choice-active");
+    }
+
+    Array.prototype.forEach.call(choices, (choice, i) => {
+        if (choice != drinks) {
+            if (choice.classList.contains("choice-active")) {
+                choice.classList.remove("choice-active");
+            }
+        }
+    })
+
     Array.prototype.forEach.call(menu_child, (item, i) => {
         if (item != dr_content) {
             if (item.classList.contains("menu-active")) {
@@ -136,6 +173,18 @@ desserts.onclick = function(e) {
         de_content.classList.remove("menu-non-active");        
     }
     de_content.classList.add("menu-active");
+
+    if (!desserts.classList.contains("choice-active")) {
+        desserts.classList.add("choice-active");
+    }
+
+    Array.prototype.forEach.call(choices, (choice, i) => {
+        if (choice != desserts) {
+            if (choice.classList.contains("choice-active")) {
+                choice.classList.remove("choice-active");
+            }
+        }
+    })
 
     Array.prototype.forEach.call(menu_child, (item, i) => {
         if (item != de_content) {

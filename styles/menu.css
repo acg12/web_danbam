@@ -68,9 +68,12 @@
 
 #content {
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 300px 1fr;
     margin: 50px 0;
+    padding: 50px 0;
+    margin-top: 3px;
     width: 100%;
+    background-color: black;
 }
 
 /* sidebar */
@@ -92,6 +95,12 @@
 
 .choice:hover {
     cursor: pointer;
+    border: #FFEE6D 3px solid;
+    box-shadow: 0 0 5px red, 
+                inset 0 0 5px red;
+}
+
+.choice-active {
     border: crimson 3px solid;
     box-shadow: 0 0 5px red, 
                 inset 0 0 5px red;
@@ -123,31 +132,25 @@
 
 .categ-title {
     text-align:center;
-    color: black;
+    /* color: black; */
     text-shadow: 2px 2px 5px lightgray;
     transition: all .5s ease;
     margin: 32px 0;
 }
 
 .food-card {
-    width: 94%;
+    border-radius: 35px;
+    width: 90%;
+    padding: 5%;
     background-color: black;
-    border-radius: 40px;
-    padding: 3%;
     margin: 20px 0;
+    border: #FFEE6D 3px solid;
+    box-shadow: 0 0 15px red, 
+                inset 0 0 15px red;
 }
 
 .foods > .food-card:nth-child(1) {
     margin-top: 0;
-}
-
-.fc-outline {
-    border-radius: 25px;
-    width: 96%;
-    padding: 2%;
-    border: #FFEE6D 3px solid;
-    box-shadow: 0 0 15px red, 
-                inset 0 0 15px red;
 }
 
 .food-image > img {

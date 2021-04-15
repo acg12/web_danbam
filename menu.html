@@ -38,7 +38,7 @@
     </div>
     <div id="content">
         <div id="menu" class="flex-col flex-center">
-            <span id="menu-light" class="subtitle choice">Light Bites</span>
+            <span id="menu-light" class="subtitle choice choice-active">Light Bites</span>
             <span id="menu-main" class="subtitle choice">Main Course</span>
             <span id="menu-drinks" class="subtitle choice">Drinks</span>
             <span id="menu-desserts" class="subtitle choice">Desserts</span>
@@ -47,38 +47,34 @@
             <div id="light-bites" class="category menu-active">
                 <div class="title categ-title">Light Bites</div>
                 <div class="flex-col flex-center foods">
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/light bites/eomuk tang.jpg" alt="">
-                            </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Eomuk Tang</div>
-                                <div class="subtitle food-desc">Korean fish cake soup</div>
-                                <div class="food-price">
-                                    <p>Rp. 35.000,-</p>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <p>Order Now!</p>
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/light bites/eomuk tang.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Eomuk Tang</div>
+                            <div class="subtitle food-desc">Korean fish cake soup</div>
+                            <div class="food-price">
+                                <p>Rp. 35.000,-</p>
                             </div>
                         </div>
+                        <div class="order">
+                            <p>Order Now!</p>
+                        </div>
                     </div>
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/light bites/tteokbokki.jpg" alt="">
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/light bites/tteokbokki.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Tteobokki</div>
+                            <div class="subtitle food-desc">No description</div>
+                            <div class="food-price">
+                                <p>Rp. 35.000,-</p>
                             </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Tteobokki</div>
-                                <div class="subtitle food-desc">No description</div>
-                                <div class="food-price">
-                                    <p>Rp. 35.000,-</p>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <p>Order Now!</p>
-                            </div>
+                        </div>
+                        <div class="order">
+                            <p>Order Now!</p>
                         </div>
                     </div>
                 </div>
@@ -86,101 +82,91 @@
             <div id="main-course" class="category menu-non-active">
                 <div class="title categ-title">Main Course</div>
                 <div class="flex-col flex-left foods">
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/main course/kimchi friedrice.jpg" alt="">
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/main course/kimchi friedrice.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Kimchi Fried Rice</div>
+                            <div class="subtitle food-desc">
+                                Ooh...kimchi! We never get bored of kimchi.
+                                <br>
+                                Here's our chef's special Kimchi Fried Rice for you!
                             </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Kimchi Fried Rice</div>
-                                <div class="subtitle food-desc">
-                                    Ooh...kimchi! We never get bored of kimchi. 
-                                    <br>
-                                    Here's our chef's special Kimchi Fried Rice for you!
-                                </div>
-                                <div class="food-price">
-                                    <p>Rp. 55.000,-</p>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <p>Order Now!</p>
+                            <div class="food-price">
+                                <p>Rp. 55.000,-</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/main course/ramen.jpg" alt="">
-                            </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Ramen</div>
-                                <div class="subtitle food-desc">
-                                    Of course! What kind of restaurant would
-                                    <br>
-                                    we be if we didn't have ramen? They're the best.
-                                </div>
-                                <div class="food-price">
-                                    <p>Rp. 65.000,-</p>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <p>Order Now!</p>
-                            </div>
+                        <div class="order">
+                            <p>Order Now!</p>
                         </div>
                     </div>
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/main course/samgyeopsal.jpg" alt="">
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/main course/ramen.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Ramen</div>
+                            <div class="subtitle food-desc">
+                                Of course! What kind of restaurant would
+                                <br>
+                                we be if we didn't have ramen? They're the best.
                             </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Samgyeopsal</div>
-                                <div class="subtitle food-desc">No description</div>
-                                <div class="food-price">
-                                    <p>Rp. 59.000,-</p>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <p>Order Now!</p>
+                            <div class="food-price">
+                                <p>Rp. 65.000,-</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/main course/dwaeji.jpg" alt="">
-                            </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Dwaeji</div>
-                                <div class="subtitle food-desc">No description</div>
-                                <div class="food-price">
-                                    <p>Rp. 75.000,-</p>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <p>Order Now!</p>
-                            </div>
+                        <div class="order">
+                            <p>Order Now!</p>
                         </div>
                     </div>
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/main course/japchae.jpg" alt="">
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/main course/samgyeopsal.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Samgyeopsal</div>
+                            <div class="subtitle food-desc">No description</div>
+                            <div class="food-price">
+                                <p>Rp. 59.000,-</p>
                             </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Japchae</div>
-                                <div class="subtitle food-desc">
-                                    Tasty stir fried korean rice noodles
-                                    <br>
-                                    with all your favourite veggies!
-                                </div>
-                                <div class="food-price">
-                                    <p>Rp. 55.000,-</p>
-                                </div>
+                        </div>
+                        <div class="order">
+                            <p>Order Now!</p>
+                        </div>
+                    </div>
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/main course/japchae.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Japchae</div>
+                            <div class="subtitle food-desc">
+                                Tasty stir fried korean rice noodles
+                                <br>
+                                with all your favourite veggies!
                             </div>
-                            <div class="order">
-                                <p>Order Now!</p>
+                            <div class="food-price">
+                                <p>Rp. 55.000,-</p>
                             </div>
+                        </div>
+                        <div class="order">
+                            <p>Order Now!</p>
+                        </div>
+                    </div>
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/main course/dwaeji.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Dwaeji</div>
+                            <div class="subtitle food-desc">No description</div>
+                            <div class="food-price">
+                                <p>Rp. 75.000,-</p>
+                            </div>
+                        </div>
+                        <div class="order">
+                            <p>Order Now!</p>
                         </div>
                     </div>
                 </div>
@@ -188,84 +174,76 @@
             <div id="drinks" class="category menu-non-active">
                 <div class="title categ-title">Drinks</div>
                 <div class="foods flex-row flex-left">
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/drinks/sikhye.jpg" alt="">
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/drinks/sikhye.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Sikhye</div>
+                            <div class="subtitle food-desc">
+                                Rice turn drink?! It's delicious, we guarantee it.
                             </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Sikhye</div>
-                                <div class="subtitle food-desc">
-                                    Rice turn drink?! It's delicious, we guarantee it.
-                                </div>
-                                <div class="food-price">
-                                    <p>Rp. 15.000,-</p>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <p>Order Now!</p>
+                            <div class="food-price">
+                                <p>Rp. 15.000,-</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/drinks/dalgona coffee.jpg" alt="">
-                            </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Dalgona Coffee</div>
-                                <div class="subtitle food-desc">
-                                    Can't make one at home? No sweat.
-                                    <br>
-                                    We got you covered. *wink*
-                                </div>
-                                <div class="food-price">
-                                    <p>Rp. 25.000,-</p>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <p>Order Now!</p>
-                            </div>
+                        <div class="order">
+                            <p>Order Now!</p>
                         </div>
                     </div>
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/drinks/soju.jpeg" alt="">
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/drinks/dalgona coffee.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Dalgona Coffee</div>
+                            <div class="subtitle food-desc">
+                                Can't make one at home? No sweat.
+                                <br>
+                                We got you covered. *wink*
                             </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Soju</div>
-                                <div class="subtitle food-desc">
-                                    Oohlala. Not for the faint of heart.
-                                </div>
-                                <div class="food-price">
-                                    <p>Rp. 95.000,- / bottle</p>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <p>Order Now!</p>
+                            <div class="food-price">
+                                <p>Rp. 25.000,-</p>
                             </div>
                         </div>
+                        <div class="order">
+                            <p>Order Now!</p>
+                        </div>
                     </div>
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/drinks/strawberry milk.jpg" alt="">
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/drinks/soju.jpeg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Soju</div>
+                            <div class="subtitle food-desc">
+                                Oohlala. Not for the faint of heart.
                             </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Strawberry Milk</div>
-                                <div class="subtitle food-desc">
-                                    Underage? We've got our homemade
-                                    <br>
-                                    strawberry milk!
-                                </div>
-                                <div class="food-price">
-                                    <p>Rp. 25.000,-</p>
-                                </div>
+                            <div class="food-price">
+                                <p>Rp. 95.000,- / bottle</p>
                             </div>
-                            <div class="order">
-                                <p>Order Now!</p>
+                        </div>
+                        <div class="order">
+                            <p>Order Now!</p>
+                        </div>
+                    </div>
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/drinks/strawberry milk.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Strawberry Milk</div>
+                            <div class="subtitle food-desc">
+                                Underage? We've got our homemade
+                                <br>
+                                strawberry milk!
                             </div>
+                            <div class="food-price">
+                                <p>Rp. 25.000,-</p>
+                            </div>
+                        </div>
+                        <div class="order">
+                            <p>Order Now!</p>
                         </div>
                     </div>
                 </div>
@@ -273,65 +251,59 @@
             <div id="desserts" class="category menu-non-active">
                 <div class="title categ-title">Desserts</div>
                 <div class="foods flex-row flex-left">
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/desserts/redbean cake.jpg" alt="">
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/desserts/redbean cake.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Red Bean Cake</div>
+                            <div class="subtitle food-desc">
+                                Tasty traditional red bean cake
+                                <br>
+                                in the style of this century.
                             </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Red Bean Cake</div>
-                                <div class="subtitle food-desc">
-                                    Tasty traditional red bean cake
-                                    <br>
-                                    in the style of this century.
-                                </div>
-                                <div class="food-price">
-                                    <p>Rp. 35.000,-</p>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <p>Order Now!</p>
+                            <div class="food-price">
+                                <p>Rp. 35.000,-</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/desserts/hotteok.jpg" alt="">
-                            </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Hotteok</div>
-                                <div class="subtitle food-desc">
-                                    Our personal favourite!
-                                </div>
-                                <div class="food-price">
-                                    <p>Rp. 35.000,-</p>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <p>Order Now!</p>
-                            </div>
+                        <div class="order">
+                            <p>Order Now!</p>
                         </div>
                     </div>
-                    <div class="food-card">
-                        <div class="flex-row flex-center fc-outline">
-                            <div class="food-image">
-                                <img src="./assets/desserts/bingsu.jpg" alt="">
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/desserts/hotteok.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Hotteok</div>
+                            <div class="subtitle food-desc">
+                                Our personal favourite!
                             </div>
-                            <div class="food-details relative">
-                                <div class="subtitle food-name">Bingsu</div>
-                                <div class="subtitle food-desc">
-                                    And why not top it all off with a big 
-                                    <br>
-                                    bowl of Bingsu? Be sure to cool ya down!
-                                </div>
-                                <div class="food-price">
-                                    <p>Rp. 49.000,-</p>
-                                </div>
+                            <div class="food-price">
+                                <p>Rp. 35.000,-</p>
                             </div>
-                            <div class="order">
-                                <p>Order Now!</p>
+                        </div>
+                        <div class="order">
+                            <p>Order Now!</p>
+                        </div>
+                    </div>
+                    <div class="flex-row flex-center food-card">
+                        <div class="food-image">
+                            <img src="./assets/desserts/bingsu.jpg" alt="">
+                        </div>
+                        <div class="food-details relative">
+                            <div class="subtitle food-name">Bingsu</div>
+                            <div class="subtitle food-desc">
+                                And why not top it all off with a big
+                                <br>
+                                bowl of Bingsu? Be sure to cool ya down!
                             </div>
+                            <div class="food-price">
+                                <p>Rp. 49.000,-</p>
+                            </div>
+                        </div>
+                        <div class="order">
+                            <p>Order Now!</p>
                         </div>
                     </div>
                 </div>
