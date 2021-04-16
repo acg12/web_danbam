@@ -1,6 +1,5 @@
 body {
-  /* background-color: blue; */
-  background-image: url("../assets/final2.jpg");
+  background-image: url("../assets/Fix_Neon.jpg");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,14 +55,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.container {
-  width: 50%;
-  margin:0 auto;
-  border-radius: 5px;
-  padding-top: 130px;
-  padding-bottom: 50px;
-  height: 50%;
-}
+
 
 label,p {
   font-family: pop-regular;
