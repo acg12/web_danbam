@@ -4,8 +4,8 @@ var curr = 0;
 
 $(document).ready(function() {
     swapImages();
-    console.log($("#promotions").width() + " " + $("#promotions").width()/2);
-    console.log($(".promo-card").width());
+    // console.log($("#promotions").width() + " " + $("#promotions").width()/2);
+    // console.log($(".promo-card").width());
     setInterval(swapImages, 3000);
 
     function swapImages() {
