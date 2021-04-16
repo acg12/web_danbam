@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/header-footer.css">
+    <link rel="stylesheet" href="./styles/contact-us.css">
+    <script src="./scripts/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <img src="./assets/logo-header.png" alt="" id="icon" class="img-animate">
+    </div>
+    <div id="menu-bar">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div id="drop-down">
+        <div id="dd-flex">
+            <a class="text-animate dd-text" href="index.html">Home</a>
+            <a class="text-animate dd-text" href="menu.html">Menu</a>
+            <a class="text-animate dd-text" href="about-us.html">About Us</a>
+            <a class="text-animate dd-text" href="location.html">Location</a>
+            <a class="text-animate dd-text" href="contact-us.html">Contact Us</a>
+        </div>
+    </div>
+ 
+    <div class="container"> 
+        <div id="title">
+            <h1>Contact Us</h1>
+            <p>Tell us about your dining experience and what needs to be improved.</p>
+        </div>
+        
+        <form action="/action_page">
+            
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Full Name " name="name" id="name" required>
+        
+            <label for="email">Enter your email:</label>
+            <input type="email" placeholder="Email "id="email" name="email">
+            
+            <label for="gender"><b>Gender:</b></label>
+            <div>
+                <input type="radio" id="male" name="drone" value="male"
+                       checked>
+                <label for="male">Male</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="female" name="drone" value="female">
+                <label for="female">Female</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="nonbinary" name="drone" value="nonbinary">
+                <label for="nonbinary">Non-Binary</label>
+              </div>
+            <p><label>
+ 
+                <label for="branch"><b>Branch Location:</b></label>
+                <select id="branch">
+                    <option value="select">--Not Specified--</option>
+                    <option value="DanBam Plaza Senayan Jakarta">DanBam Plaza Senayan Jakarta</option>
+                    <option value="DanBam Paragon City Mall Semarang">DanBam Paragon City Mall Semarang</option>
+                    <option value="DanBam Seminyak Village Bali">DanBam Seminyak Village Bali</option>
+                    <option value="DanBam Pakuwon City Mall Surabaya">DanBam Pakuwon City Mall Surabaya</option>
+                </select>
+              <p><label>
+      
+          <label for="subject"><b>Subject</b></label>
+          <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+            
+          <div id="new1">
+            <label>
+                <input type="checkbox" checked="checked" name="offer" style="margin-bottom:15px"> I want to receive exclusive offers, news, and updates via email. 
+            </label>
+            </div>
+            
+            <div id="new2">
+                <input type="submit" value="Send">
+            </div>
+           
+        </form>
+      </div>
+ 
+      <div id="foot-cont">
+        <div id="footer" class="flex-col flex-center">
+            <div id="foot-up" class="flex-row flex-center">
+                <a target="_blank" href="https://www.instagram.com" class="sosmed subtitle">Instagram</a>
+                <a target="_blank" href="https://www.twitter.com" class="sosmed subtitle">Twitter</a>
+                <a target="_blank" href="https://www.facebook.com" class="sosmed subtitle">Facebook</a>
+            </div>
+            <div id="foot-bottom" class="text-animate">
+                <p>&copy 2021 DanBam Indonesia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./scripts/all.js"></script>
+</html>
