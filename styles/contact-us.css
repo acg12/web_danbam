@@ -1,8 +1,9 @@
 body {
-  background-image: url("../assets/Fix_Neon.jpg");
+  background-image: url("../assets/Neon.jpg");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
+  height:150%;
 }
   
  input[type=text], select, textarea, input[type=email]{
