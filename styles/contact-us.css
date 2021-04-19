@@ -61,11 +61,14 @@ input[type=submit]:hover {
 label,p {
   font-family: pop-regular;
   color: white;
+  font-size: larger;
 }
 
 h1 {
   font-family: pop-bold;
   color: white;
+  font-size: 3em;
+  
 }
 
 #title {
@@ -84,6 +87,7 @@ textarea {
 
  #new2{
    text-align: center;
+   padding-bottom: 64px;
  }
  
  
