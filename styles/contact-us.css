@@ -25,6 +25,7 @@ body {
      border-radius: 4px;
      cursor: pointer;
      color: white;
+     text-shadow: 2px 2px 5px gray;
    }
    
    input[type=submit]:hover {
@@ -42,6 +43,7 @@ body {
  label,p {
    font-family: pop-regular;
    color: white;
+   text-shadow: 2px 2px 5px gray;
  }
 
 input[type=submit] {
@@ -65,7 +67,7 @@ h1 {
   font-family: pop-bold;
   color: white;
   font-size: 4em;
-  
+  text-shadow: 2px 2px 5px gray;
 }
 
 #title > h1 {
