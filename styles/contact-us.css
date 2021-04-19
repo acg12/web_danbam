@@ -39,7 +39,10 @@ body {
      padding-bottom: 50px;
    }
   
-
+ label,p {
+   font-family: pop-regular;
+   color: white;
+ }
 
 input[type=submit] {
   background-color: #4CAF50;
@@ -53,12 +56,9 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-
-
 label,p {
   font-family: pop-regular;
   color: white;
-  font-size: larger;
 }
 
 h1 {
@@ -84,7 +84,7 @@ textarea {
 
  #new2{
    text-align: center;
-   padding-bottom: 64px;
+   padding-bottom: 232px;
  }
  
  
