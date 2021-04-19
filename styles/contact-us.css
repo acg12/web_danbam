@@ -64,15 +64,20 @@ label,p {
 h1 {
   font-family: pop-bold;
   color: white;
-  font-size: 3em;
+  font-size: 4em;
   
 }
 
-#title {
+#title > h1 {
   text-align: center;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
+#title > p{
+  text-align: center;
+}
 textarea {
   font-family: pop-regular;
 }
@@ -84,7 +89,10 @@ textarea {
 
  #new2{
    text-align: center;
-   padding-bottom: 232px;
+   padding-bottom: 250px;
  }
  
+ #nonbinary {
+   margin-bottom: 16px;
+ }
  
