@@ -6,45 +6,45 @@ body {
   height:150%;
 }
   
- input[type=text], select, textarea, input[type=email]{
-     font-family: pop-regular;  
-     width: 100%; 
-     padding: 12px; 
-     border: 1px solid #ccc; 
-     border-radius: 4px; 
-     box-sizing: border-box; 
-     margin-top: 6px; 
-     margin-bottom: 16px; 
-     resize: vertical 
-   }
+input[type=text], select, textarea, input[type=email]{
+  font-family: pop-regular;  
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px 5px gray;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
   
-   input[type=submit] {
-     background-color: #4CAF50;
-     padding: 12px 20px;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
-     color: white;
-     text-shadow: 2px 2px 5px gray;
-   }
-   
-   input[type=submit]:hover {
-     background-color: #45a049;
-   }
-   
-   .container {
-     width: 50%;
-     margin:0 auto;
-     border-radius: 5px;
-     padding-top: 130px;
-     padding-bottom: 50px;
-   }
-  
- label,p {
-   font-family: pop-regular;
-   color: white;
-   text-shadow: 2px 2px 5px gray;
- }
+.container {
+  width: 50%;
+  margin:0 auto;
+  border-radius: 5px;
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+label,p {
+  font-family: pop-regular;
+  color: white;
+  text-shadow: 2px 2px 5px gray;
+}
 
 input[type=submit] {
   background-color: #4CAF50;
@@ -84,17 +84,20 @@ textarea {
   font-family: pop-regular;
 }
   
- #new1 {
-   text-align: center;
-   margin-bottom: 20px;
- }
+#new1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
- #new2{
-   text-align: center;
-   padding-bottom: 250px;
- }
- 
- #nonbinary {
-   margin-bottom: 16px;
- }
- 
+#new2{
+  text-align: center;
+  padding-bottom: 250px;
+}
+
+#nonbinary {
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 969px) {
+  
+}
