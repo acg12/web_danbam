@@ -39,10 +39,7 @@ body {
      padding-bottom: 50px;
    }
   
- label,p {
-   font-family: pop-regular;
-   color: white;
- }
+
 
 input[type=submit] {
   background-color: #4CAF50;
