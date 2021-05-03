@@ -99,5 +99,23 @@ textarea {
 }
 
 @media only screen and (max-width: 969px) {
-  
+    
+.container {
+  width: 85%;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#new2{
+  padding-bottom: 30px;
+}
+
+#foot-cont {
+  position: static;
+  padding-top: 100px;
+}
+
 }
