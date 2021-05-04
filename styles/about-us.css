@@ -100,6 +100,7 @@ hr {
   font-size: 1.5em;
   text-align: center;
   padding-bottom: 10px;
+  font-family: pop-medium;
   background: -webkit-linear-gradient(#FF006F, #008CFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -111,6 +112,7 @@ hr {
   font-size: 1em;
   text-align: center;
   padding-bottom: 30px;
+  font-family: pop-regular;
 }
 
 #upper-right {
@@ -173,7 +175,7 @@ hr {
   padding-top: 10px;
 }
 
-@media screen and (max-width: 1078px) {
+@media screen and (max-width: 969px) {
 
   #upper-left {
     text-align: center;
