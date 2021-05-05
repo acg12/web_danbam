@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/icons/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/all.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/header-footer.css">
@@ -22,11 +22,14 @@
     </div>
     <div id="drop-down">
         <div id="dd-flex">
-            <a class="text-animate dd-text" href="index.html">Home</a>
-            <a class="text-animate dd-text" href="menu.html">Menu</a>
-            <a class="text-animate dd-text" href="about-us.html">About Us</a>
-            <a class="text-animate dd-text" href="location.html">Location</a>
-            <a class="text-animate dd-text" href="contact-us.html">Contact Us</a>
+            <a class="text-animate" href="index.html">Home</a>
+            <a class="text-animate" href="menu.html">Menu</a>
+            <a class="text-animate" href="location.html">Location</a>
+            <a class="text-animate" id="more" href="#">More</a>
+            <div class="flex-col more-nonactive" id="dd-more">
+                <a class="text-animate" href="about-us.html">About Us</a>
+                <a class="text-animate" href="contact-us.html">Contact Us</a>
+            </div>
         </div>
     </div>
     <div id="banner" class="text-animate">

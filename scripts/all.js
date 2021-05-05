@@ -23,3 +23,18 @@ $("#menu-bar").click(function() {
 		);
 	}
 })
+
+var dd_more = document.getElementById("more");
+var more_content = document.getElementById("dd-more");
+
+dd_more.addEventListener("click", function() {
+	if (more_content.classList.contains("more-active")) {
+		dd_more.classList.remove("dd-more-active");
+		more_content.classList.remove("more-active");
+		more_content.classList.add("more-nonactive");
+	} else {
+		more_content.classList.remove("more-nonactive");
+		more_content.classList.add("more-active");
+		dd_more.classList.add("dd-more-active");
+	}
+})
