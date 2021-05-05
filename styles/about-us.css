@@ -7,7 +7,7 @@ body {
   background-image: url("../assets/about-us-banner.jpg");
   /* https://unsplash.com/photos/J558nCHFYmY */
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -15,8 +15,8 @@ body {
 
 #banner-text {
   margin: 0;
-  padding: 325px 50px 0 50px;
-  text-align: center;
+  padding: 0;
+  height: 100vh;
   color: white;
   text-shadow: 0 0 30px gray;
   display: flex;
@@ -28,9 +28,8 @@ body {
 #banner-text h1 {
   margin: 0;
   padding: 0;
-  width: 100%;
   text-align: center;
-  font-size: 6em;
+  font-size: 7em;
   font-family: pop-medium;
 }
 
