@@ -155,6 +155,7 @@
     height: 150px;
     width: 150px;
     border-radius: 15px;
+    transition: all .8s ease-out;
 }
 
 .food-image {
@@ -181,6 +182,7 @@
 
 .food-details {
     padding-left: 30px;
+    min-width: 200px;
 }
 
 .order {
@@ -244,11 +246,14 @@
 
     .food-desc {
         font-size: 12px;
-        width: 400px;
     }
 
     .food-price > p {
         font-size: 16px;
+    }
+
+    .food-details {
+        width: 250px;
     }
 
     .order {
@@ -271,6 +276,11 @@
         height: 200px;
     }
 
+    .choice {
+        margin: 0 4px;
+        font-size: 12px;
+    }
+
     .food-card {
         padding: 16px;
     }
@@ -281,9 +291,14 @@
         width: 200px;
     }
     
+    .food-image {
+        width: 100%;
+        text-align: center;
+    }
+
     .food-image > img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     } 
 
     .food-card {
