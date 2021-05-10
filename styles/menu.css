@@ -183,6 +183,7 @@
 .food-details {
     padding-left: 30px;
     min-width: 200px;
+    max-width: 500px;
 }
 
 .order {
@@ -288,7 +289,6 @@
     .food-details {
         padding-left: 16px;
         margin: 16px 0;
-        width: 200px;
     }
     
     .food-image {
@@ -297,8 +297,8 @@
     }
 
     .food-image > img {
-        width: 200px;
-        height: 200px;
+        width: 0;
+        height: 0;
     } 
 
     .food-card {

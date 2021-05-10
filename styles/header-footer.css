@@ -135,14 +135,16 @@
         align-items: flex-start;
     }
 
+    #foot-up {
+        width: 80%;
+    }
+
     #foot-up > a {
-        font-size: 12px;
         text-decoration: none;
         margin: 0;
     }
 
     #foot-bottom > p {
-        font-size: 14px;
         text-align: center;
     }
 }
