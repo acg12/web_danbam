@@ -1,9 +1,22 @@
+/* title banner */
+
+#menu-banner {
+    height: 100vh;
+    justify-content: center;
+    background-image: url("../assets/menu-banner.jpg");
+    background-size: cover;
+    margin: 0;
+    background-position: center;
+    font-size: 100px;
+    text-align: center;
+}
+
 /* promotions picture gallery */
 
 #promo-cont {
     position: relative;
     height: 450px;
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     overflow-x: hidden;
     transition: all .5s ease;
@@ -204,6 +217,10 @@
 }
 
 @media only screen and (max-width: 969px) {
+    #menu-banner {
+        font-size: 50px;
+    }
+
     #content {
         display: flex;
         flex-direction: column;
@@ -292,8 +309,7 @@
     }
     
     .food-image {
-        width: 100%;
-        text-align: center;
+        display: none;
     }
 
     .food-image > img {
