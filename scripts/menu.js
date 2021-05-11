@@ -1,5 +1,7 @@
 var cards = $("#promotions").children();
 var ncards = $("#promotions").children().length;
+var tabs = $("#tabs-cont").children();
+var ntabs = tabs.length;
 var curr = 0;
 
 $(document).ready(function() {
@@ -51,6 +53,16 @@ $(document).ready(function() {
                      'z-index' : ncards-i
                  });
              }
+        });
+
+        $.each(tabs, function (i, tab) {
+            if (i == curr) {
+                $(tab).addClass('active-tab');
+            } else {
+                if ($(tab).hasClass('active-tab')) {
+                    $(tab).removeClass('active-tab');
+                }
+            }
         });
 
         curr++;
