@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Location</title>
-  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="shortcut icon" href="./assets/icons/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="./styles/all.css">
   <link rel="stylesheet" href="./styles/header-footer.css">
   <link rel="stylesheet" href="./styles/location.css">
@@ -16,73 +15,165 @@
 <body>
   <div id="header">
     <img src="./assets/logo-header.png" alt="" id="icon" class="img-animate">
-</div>
-<div id="menu-bar">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-</div>
-<div id="drop-down">
-  <div id="dd-flex">
-    <a class="text-animate" href="index.html">Home</a>
-    <a class="text-animate" href="menu.html">Menu</a>
-    <a class="text-animate" href="location.html">Location</a>
-    <a class="text-animate" id="more" href="#">More</a>
-    <div class="flex-col more-nonactive" id="dd-more">
-      <a class="text-animate" href="about-us.html">About Us</a>
-      <a class="text-animate" href="contact-us.html">Contact Us</a>
+  </div>
+  <div id="menu-bar">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </div>
+  <div id="drop-down">
+    <div id="dd-flex">
+      <a class="text-animate" href="index.html">Home</a>
+      <a class="text-animate" href="menu.html">Menu</a>
+      <a class="text-animate" href="location.html">Location</a>
+      <a class="text-animate" id="more" href="#">More</a>
+      <div class="flex-col more-nonactive" id="dd-more">
+        <a class="text-animate" href="about-us.html">About Us</a>
+        <a class="text-animate" href="contact-us.html">Contact Us</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="banner" class="text-animate">
-  <div id="banner-text" class="text-animate">
-      <div class="title">Visit Us</div>
-  </div>
-</div>
+  <!-- <div id="jump-map">
+    <a href="#map-cont">
+      <img src="./assets/icons/map-icon.png" alt="">
+    </a>
+  </div> -->
 
-<div id="small">
-  <div id="textloc">
-  <p>
-    <strong>Jakarta</strong>
-    <br>Jl. Asia Afrika No.8, Gelora, Kec. Tanah Abang, Kota Jakarta Pusat, DKI Jakarta
-    <br>(024)312111
-  </p>
-  <p>
-    <strong>Semarang</strong>
-    <br>Jl. Pemuda No.118, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah
-    <br>(024)322212
-  </p>
-  <p>
-    <strong>Surabaya</strong>
-    <br>Jl. Mayjen Yono Suwoyo No.2, Babatan, Kec. Wiyung, Kota SBY, Jawa Timur
-    <br>(024)332313
-  </p>
-  <p>
-    <strong>Bali</strong>
-    <br>Jl. Kayu Jati No.8, Seminyak, Kuta, Kabupaten Badung, Bali
-    <br>(024)342414
-  </p>
-  </div>  
-</div>
-
-<div class="container"> 
-  <iframe src="https://www.google.com/maps/d/embed?mid=1IfgwNYTOQXwkpLyJd_f5iAzda9Jcew4C" width="640" height="480"></iframe></p>
+  <div id="banner" class="title flex-col text-animate">
+    FIND US
   </div>
 
+  <div id="cities">
+    <div class="city">
+      <div class="title city-name">
+        Jakarta
+      </div>
+      <div class="flex-row flex-center locations">
+        <div class="loc-card">
+          <div class="picture"></div>
+          <div class="loc-text">
+            <div class="rest-name">DanBam Paragon</div>
+            <div class="address">Pemuda Street no. 123</div>
+            <hr class="line">
+            <div class="open-time">11.30 - 23.00</div>
+            <div class="book-btn">Book a Table</div>
+          </div>
+        </div>
+        <div class="loc-card">
+          <div class="picture"></div>
+          <div class="loc-text">
+            <div class="rest-name">DanBam Senayan</div>
+            <div class="address">Pemuda Street no. 123</div>
+            <hr class="line">
+            <div class="open-time">11.30 - 23.00</div>
+            <div class="book-btn">Book a Table</div>
+          </div>
+        </div>
+        <div class="loc-card">
+          <div class="picture"></div>
+          <div class="loc-text">
+            <div class="rest-name">DanBam TA</div>
+            <div class="address">Pemuda Street no. 123</div>
+            <hr class="line">
+            <div class="open-time">11.30 - 23.00</div>
+            <div class="book-btn">Book a Table</div>
+          </div>
+        </div>
+        <div class="loc-card">
+          <div class="picture"></div>
+          <div class="loc-text">
+            <div class="rest-name">DanBam GI</div>
+            <div class="address">Pemuda Street no. 123</div>
+            <hr class="line">
+            <div class="open-time">11.30 - 23.00</div>
+            <div class="book-btn">Book a Table</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="city">
+      <div class="title city-name">
+        Semarang
+      </div>
+      <div class="flex-row flex-center locations">
+        <div class="loc-card">
+          <div class="picture"></div>
+          <div class="loc-text">
+            <div class="rest-name">DanBam DP Mall</div>
+            <div class="address">Pemuda Street no. 123</div>
+            <hr class="line">
+            <div class="open-time">11.30 - 23.00</div>
+            <div class="book-btn">Book a Table</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="city">
+      <div class="title city-name">
+        Surabaya
+      </div>
+      <div class="flex-row flex-center locations">
+        <div class="loc-card">
+          <div class="picture"></div>
+          <div class="loc-text">
+            <div class="rest-name">DanBam TP</div>
+            <div class="address">Pemuda Street no. 123</div>
+            <hr class="line">
+            <div class="open-time">11.30 - 23.00</div>
+            <div class="book-btn">Book a Table</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="city">
+      <div class="title city-name">
+        Bali
+      </div>
+      <div class="flex-row flex-center locations">
+        <div class="loc-card">
+          <div class="picture"></div>
+          <div class="loc-text">
+            <div class="rest-name">DanBam</div>
+            <div class="address">Pemuda Street no. 123</div>
+            <hr class="line">
+            <div class="open-time">11.30 - 23.00</div>
+            <div class="book-btn">Book a Table</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="map-cont"> 
+    <iframe id="map" src="https://www.google.com/maps/d/embed?mid=1IfgwNYTOQXwkpLyJd_f5iAzda9Jcew4C"></iframe>
+  </div>
+
+  <div id="quote">
+    <div id="q-header">DANBAM</div>
+    <div id="q-content" class="text-animate">
+      We aim to serve the best Korean Cuisine <span id="q-bold">reflecting the community</span> in every location. 
+    </div>
+    <div>
+      <span id="q-link"><a href="about-us.html">Learn more &rarr;</a></span>
+    </div>
+  </div>
 
   <div id="foot-cont">
     <div id="footer" class="flex-col flex-center">
-        <div id="foot-up" class="flex-row flex-center">
-            <a target="_blank" href="https://www.instagram.com" class="sosmed subtitle">Instagram</a>
-            <a target="_blank" href="https://www.twitter.com" class="sosmed subtitle">Twitter</a>
-            <a target="_blank" href="https://www.facebook.com" class="sosmed subtitle">Facebook</a>
-        </div>
-        <div id="foot-bottom" class="text-animate">
-            <p>&copy 2021 DanBam Indonesia. All Rights Reserved.</p>
-        </div>
+      <div id="foot-up" class="flex-row flex-center">
+        <a target="_blank" href="https://www.instagram.com" class="sosmed subtitle">Instagram</a>
+        <a target="_blank" href="https://www.twitter.com" class="sosmed subtitle">Twitter</a>
+        <a target="_blank" href="https://www.facebook.com" class="sosmed subtitle">Facebook</a>
+      </div>
+      <div id="foot-bottom" class="text-animate">
+        <p>&copy 2021 DanBam Indonesia. All Rights Reserved.</p>
+      </div>
     </div>
-</div>
+  </div>
 </body>
 <script src="./scripts/all.js"></script>
 </body>

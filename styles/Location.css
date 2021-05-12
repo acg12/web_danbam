@@ -1,48 +1,183 @@
+/* banner */
 
 #banner {
     background-image: url("../assets/Location3_.jpg");
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
+    background-position: center;
     background-size: cover;
-    height: 80vh;
-}
-#banner-text {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-.title{
-    font-size: 6em;
-}
-
-#textloc {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-  .container {
-    width: 100%;
-    margin:0 auto;
-    border-radius: 5px;
-    padding-top: 45px;
-    padding-bottom: 100px;
-    padding-left: 318px;
-  }
-
-#small {
-    
-    padding-left: 10px;
-}
-
-#textloc > p{
-    color: black;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
 }
 
 #map {
-    height: 50%;
+    width: 100%;
+    border: none;
+    height: 480px;
+}
+
+/* cities */
+
+#cities {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+/* each city */
+
+.city-name {
+    margin: 0;
+    padding-left: 50px;
+}
+
+.loc-card {
+    margin: 16px 50px;
+    overflow: hidden;
+    width: 300px;
+    height: 270px;
+    transition: all 1s ease-in-out;
+}
+
+.picture {
+    width: 300px;
+    height: 200px;
+    background-image: url("../assets/Location1_.jpg");
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.loc-text {
+    color: white;
+    font-family: pop-regular;
+    padding: 16px 8px;
+    background-color: black;
+    width: 284px;
+    transition: all .3s ease-in-out;
+}
+
+.rest-name {
+    font-family: pop-bold;
+    font-size: 22px;
+}
+
+.address {
+    font-size: 14px;
+}
+
+.open-time {
+    text-align: center;
+    font-size: 14px;
+    font-family: pop-medium;
+}
+
+.book-btn {
+    font-size: 16px;
+    padding: 8px;
+    margin: 16px 4px;
+    text-align: center;
+    border: #FF2CDC 2px solid;
+    box-shadow: 0 0 10px #FF2CDC, 
+                inset 0 0 10px #FF2CDC;
+    border-radius: 25px;
+    transition: all .3s ease-in-out;
+}
+
+.line {
+    border-top: 1px solid white;
+    padding: 0;
+}
+
+/* make loc-card interactive */
+
+.loc-card:hover .loc-text {
+    cursor: pointer;
+    transform: translate(0, -120px);
+}
+
+.book-btn:hover {
+    cursor: pointer;
+    background-color: #FF2CDC;
+}
+
+/* quote */
+
+#quote {
+    padding: 150px 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+#q-header {
+    font-family: pop-regular;
+    font-size: 14px;
+}
+
+#q-content {
+    font-size: 60px;
+    font-family: pop-medium;
+    padding: 50px;
+    padding-bottom: 100px;
+}
+
+#q-bold {
+    font-family: pop-bold;
+}
+
+#q-link {
+    font-family: pop-regular;
+    border-bottom: 1px solid black;
+}
+
+#q-link > a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 969px) {
+    #banner {
+        font-size: 80px;
+    }
+
+    .locations {
+        flex-direction: column;
+    }
+
+    .city-name {
+        font-size: 40px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .loc-card, .picture, .loc-text {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .book-btn {
+        margin: 16px;
+    }
+
+    .rest-name, .address, .line, .open-time {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    #quote {
+        padding: 150px 20px;
+    }
+
+    #q-header {
+        font-size: 14px;
+    }
+
+    #q-content {
+        font-size: 40px;
+    }
 }
