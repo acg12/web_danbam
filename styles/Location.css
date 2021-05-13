@@ -1,3 +1,18 @@
+/* untuk jump ke map */
+
+#jump-map {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+#jump-map img {
+    width: 50px;
+    height: 50px;
+}
+
 /* banner */
 
 #banner {
@@ -13,8 +28,14 @@
     font-size: 100px;
 }
 
+#map-cont {
+    text-align: center;
+    background-color: black;
+    padding: 0;
+}
+
 #map {
-    width: 100%;
+    width: 80%;
     border: none;
     height: 480px;
 }
@@ -138,6 +159,11 @@
 }
 
 @media only screen and (max-width: 969px) {
+    #jump-map {
+        right: 30px;
+        bottom: 30px;
+    }
+    
     #banner {
         font-size: 80px;
     }
