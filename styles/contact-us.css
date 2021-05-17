@@ -121,19 +121,28 @@ textarea {
   margin-bottom: 16px;
 }
 
+
 @media only screen and (max-width: 969px) {
-    
+
+#banner {
+  height: 70vh;
+}
+
+#banner-text {
+  height: 80vh;
+}
+
 .container {
   width: 85%;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
-h1 {
-  font-size: 3em;
+.title{
+  font-size: 70px;
 }
 
-#new2{
-  padding-bottom: 30px;
+.subtitle{
+  font-size: 15px;
 }
 
 #foot-cont {
