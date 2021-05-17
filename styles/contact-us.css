@@ -1,9 +1,33 @@
-body {
+
+#banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: white;
+  align-items: center;
+}
+
+.title{
+  font-size: 100px;
+}
+
+.subtitle{
+  font-size: 25px;
+}
+
+#banner {
   background-image: url("../assets/Neon.jpg");
-  background-size:cover;
   background-repeat: no-repeat;
-  background-position: center;
-  height:150%;
+  background-position-x: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+body {
+  background-color: #471133;
 }
   
 input[type=text], select, textarea, input[type=email]{
@@ -36,7 +60,7 @@ input[type=submit]:hover {
   width: 50%;
   margin:0 auto;
   border-radius: 5px;
-  padding-top: 130px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -91,7 +115,6 @@ textarea {
 
 #new2{
   text-align: center;
-  padding-bottom: 250px;
 }
 
 #nonbinary {
