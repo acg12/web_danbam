@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="./assets/icons/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/all.css">
     <link rel="stylesheet" href="./styles/header-footer.css">
     <link rel="stylesheet" href="./styles/contact-us.css">
@@ -41,33 +40,32 @@
     </div>
     <div class="container"> 
         
-        <form action="/action_page">
-            
+        <form name="contactForm" action="#" method="post" onsubmit="return validateForm()">
+
             <label for="name">Name</label>
-            <input type="text" placeholder="Full Name " name="name" id="name" required>
+            <input type="text" placeholder="Full Name" name="name" id="name">
         
             <label for="email">Email</label>
-            <input type="email" placeholder="Enter Your Email "id="email" name="email">
+            <input type="email" placeholder="Enter Your Email" id="email" name="email">
             
             <label for="gender">Gender</label>
             <div>
-                <input type="radio" id="male" name="drone" value="male"
-                       checked>
+                <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label>
               </div>
               
               <div>
-                <input type="radio" id="female" name="drone" value="female">
+                <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label>
               </div>
               
               <div>
-                <input type="radio" id="nonbinary" name="drone" value="nonbinary">
+                <input type="radio" id="nonbinary" name="gender" value="nonbinary">
                 <label for="nonbinary">Non-Binary</label>
               </div>
             <label>
  
-                <label for="branch">Branch Location</label>
+            <label for="branch">Branch Location</label>
                 <select id="branch">
                     <option value="select">--Not Specified--</option>
                     <option value="DanBam Plaza Senayan Jakarta">DanBam Plaza Senayan Jakarta</option>
@@ -77,23 +75,23 @@
                 </select>
             </label>
       
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
-            
-          <div id="new1">
-            <label>
-            <input type="checkbox" checked="checked" name="offer" style="margin-bottom:15px"> I want to receive exclusive offers, news, and updates via email. 
-            </label>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+                
+            <div id="new1">
+                <label>
+                    <input type="checkbox" name="offer" style="margin-bottom:15px"> I want to receive exclusive offers, news, and updates via email. 
+                </label>
             </div>
-            
+                
             <div id="new2">
-                <input type="submit" value="Send">
+                <input type="submit" value="Submit">
             </div>
            
         </form>
-      </div>
+    </div>
  
-      <div id="foot-cont">
+    <div id="foot-cont">
         <div id="footer" class="flex-col flex-center">
             <div id="foot-up" class="flex-row flex-center">
                 <a target="_blank" href="https://www.instagram.com" class="sosmed subtitle">Instagram</a>
@@ -107,4 +105,5 @@
     </div>
 </body>
 <script src="./scripts/all.js"></script>
+<script src="./scripts/form-validation.js"></script>
 </html>
