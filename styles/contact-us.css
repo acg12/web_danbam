@@ -28,6 +28,7 @@
 
 body {
   background-color: #471133;
+  padding-bottom: 50px;
 }
   
 input[type=text], select, textarea, input[type=email]{
