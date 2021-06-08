@@ -21,8 +21,6 @@ function validateForm() {
     } else if(subject.length == 0){
       alert("Type your message!")
     } else {
-      return true
+      alert("Success!")
     }
-    
-    return false
 }

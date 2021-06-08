@@ -40,7 +40,7 @@
     </div>
     <div class="container"> 
         
-        <form name="contactForm" action="#" method="post" onsubmit="return validateForm()">
+        <form name="contactForm" action="#" method="post">
 
             <label for="name">Name</label>
             <input type="text" placeholder="Full Name" name="name" id="name">
@@ -85,7 +85,7 @@
             </div>
                 
             <div id="new2">
-                <input type="submit" value="Submit">
+                <input type="button" value="Submit" onclick=validateForm()>
             </div>
            
         </form>

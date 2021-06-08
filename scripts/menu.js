@@ -6,17 +6,19 @@ var curr = 0;
 
 $(document).ready(function() {
     swapImages();
-    // console.log($("#promotions").width() + " " + $("#promotions").width()/2);
-    // console.log($(".promo-card").width());
     setInterval(swapImages, 3000);
 
     function swapImages() {
-        $.each(cards, function (i, card) { 
-             if (i == curr - 1 || (i == ncards-1 && curr == 0)) {
-                 $(card).addClass('left');
-                 $(card).css({
-                     'left' : $("#promotions").width()/2 - $(card).width() + 'px',
-                     'z-index' : '0'
+        for (let i = 0; i < cards.length; i++) { 
+            var card = cards.eq(i)
+            // if dia adalah card yg muncul sblm yg active
+            // ATAU yg active adalah 0, maka sblm nya adalah nomer ncards - 1
+            // maka taruh di kiri
+            if (i == curr - 1 || (i == ncards-1 && curr == 0)) {
+                $(card).addClass('left');
+                $(card).css({
+                    left : $("#promotions").width()/2 - $(card).width() + 'px',
+                    zIndex : '0'
                 });
 
                 if ($(card).hasClass('right')) {
@@ -25,11 +27,13 @@ $(document).ready(function() {
                 if ($(card).hasClass('active')) {
                     $(card).removeClass('active');
                 }
-             } else if (i == curr) {
+            }
+            // dia yg active sekarang
+            else if (i == curr) {
                 $(card).addClass('active');
                 $(card).css({
-                    'left' : $("#promotions").width()/2 - $(card).width()/2 + 'px',
-                    'z-index' : '10'
+                    left : $("#promotions").width()/2 - $(card).width()/2 + 'px',
+                    zIndex : '10'
                 });
 
                 if ($(card).hasClass('left')) {
@@ -38,24 +42,28 @@ $(document).ready(function() {
                 if ($(card).hasClass('right')) {
                     $(card).removeClass('right');
                 }
-             } else {
-                 $(card).addClass('right');
+            } 
+            // else dia ke kanan semua
+            else {
+                $(card).addClass('right');
 
-                 if ($(card).hasClass('active')) {
-                     $(card).removeClass('active');
-                 }
-                 if ($(card).hasClass('left')) {
-                     $(card).removeClass('left');
-                 }
+                if ($(card).hasClass('active')) {
+                    $(card).removeClass('active');
+                }
+                if ($(card).hasClass('left')) {
+                    $(card).removeClass('left');
+                }
 
-                 $(card).css({
-                     'left' : $("#promotions").width()/2 + $(card).width()/4 + 'px',
-                     'z-index' : ncards-i
-                 });
-             }
-        });
+                $(card).css({
+                    left : $("#promotions").width()/2 + $(card).width()/4 + 'px',
+                    zIndex : ncards-i
+                });
+            }
+        };
 
-        $.each(tabs, function (i, tab) {
+        for(let i = 0; i < tabs.length; i++) {
+            var tab = tabs.eq(i)
+
             if (i == curr) {
                 $(tab).addClass('active-tab');
             } else {
@@ -63,7 +71,7 @@ $(document).ready(function() {
                     $(tab).removeClass('active-tab');
                 }
             }
-        });
+        };
 
         curr++;
         if (curr == ncards) {
@@ -81,132 +89,135 @@ var choices = document.getElementById("menu").children;
 var allmenu = document.getElementById("categ-cont");
 var menu_child = allmenu.children;
 
-console.log(menu_child);
-
 lightbites.onclick = function(e) {
+    // ambil content menu lightbites
     var lb_content = document.getElementById("light-bites");
-    if (lb_content.classList.contains("menu-non-active")) {
-        lb_content.classList.remove("menu-non-active");        
-    }
-    lb_content.classList.add("menu-active");
 
-    if (!lightbites.classList.contains("choice-active")) {
-        lightbites.classList.add("choice-active");
-    }
-
-    Array.prototype.forEach.call(choices, (choice, i) => {
+    // buat choice disamping
+    for(let i = 0; i < choices.length; i++) {
+        var choice = choices.item(i)
+        // kalo bukan choice lightbites jadiin semua non active
         if (choice != lightbites) {
             if (choice.classList.contains("choice-active")) {
                 choice.classList.remove("choice-active");
             }
+        } else {
+            choice.classList.add("choice-active")
         }
-    })
+    }
 
-    Array.prototype.forEach.call(menu_child, (item, i) => {
+    for(let i = 0; i < menu_child.length; i++) {
+        var item = menu_child.item(i)
+
+        // kalo bukan lightbites content
         if (item != lb_content) {
+            // klo sblmnya active, hilangin
             if (item.classList.contains("menu-active")) {
                 item.classList.remove("menu-active");
             }
-
-            if (!item.classList.contains("menu-non-active")) {
-                item.classList.add("menu-non-active");
+            item.classList.add("menu-non-active");
+        } else {
+            // klo sblmnya non active, hilangin
+            if (lb_content.classList.contains("menu-non-active")) {
+                lb_content.classList.remove("menu-non-active");        
             }
+            item.classList.add("menu-active")
         }
-    })
+    }
 }
 
 maincourse.onclick = function(e) {
     var mc_content = document.getElementById("main-course");
-    if (mc_content.classList.contains("menu-non-active")) {
-        mc_content.classList.remove("menu-non-active");        
-    }
-    mc_content.classList.add("menu-active");
 
-    if (!maincourse.classList.contains("choice-active")) {
-        maincourse.classList.add("choice-active");
-    }
+    for(let i = 0; i < choices.length; i++) {
+        var choice = choices.item(i)
 
-    Array.prototype.forEach.call(choices, (choice, i) => {
         if (choice != maincourse) {
             if (choice.classList.contains("choice-active")) {
                 choice.classList.remove("choice-active");
             }
+        } else {
+            choice.classList.add("choice-active")
         }
-    })
+    }
 
-    Array.prototype.forEach.call(menu_child, (item, i) => {
+    for(let i = 0; i < menu_child.length; i++) {
+        var item = menu_child.item(i)
+
         if (item != mc_content) {
             if (item.classList.contains("menu-active")) {
                 item.classList.remove("menu-active");
             }
-
-            if (!item.classList.contains("menu-non-active")) {
-                item.classList.add("menu-non-active");
+            item.classList.add("menu-non-active");
+        } else {
+            if (mc_content.classList.contains("menu-non-active")) {
+                mc_content.classList.remove("menu-non-active");        
             }
+            mc_content.classList.add("menu-active");
         }
-    })
+    }
 }
 
 drinks.onclick = function(e) {
     var dr_content = document.getElementById("drinks");
-    if (dr_content.classList.contains("menu-non-active")) {
-        dr_content.classList.remove("menu-non-active");        
-    }
-    dr_content.classList.add("menu-active");
+    
+    for(let i = 0; i < choices.length; i++) {
+        var choice = choices.item(i)
 
-    if (!drinks.classList.contains("choice-active")) {
-        drinks.classList.add("choice-active");
-    }
-
-    Array.prototype.forEach.call(choices, (choice, i) => {
         if (choice != drinks) {
             if (choice.classList.contains("choice-active")) {
                 choice.classList.remove("choice-active");
             }
+        } else {
+            choice.classList.add("choice-active")
         }
-    })
+    }
 
-    Array.prototype.forEach.call(menu_child, (item, i) => {
+    for(let i = 0; i < menu_child.length; i++) {
+        var item = menu_child.item(i)
+
         if (item != dr_content) {
             if (item.classList.contains("menu-active")) {
                 item.classList.remove("menu-active");
             }
-
-            if (!item.classList.contains("menu-non-active")) {
-                item.classList.add("menu-non-active");
+            item.classList.add("menu-non-active");
+        } else {
+            if (dr_content.classList.contains("menu-non-active")) {
+                dr_content.classList.remove("menu-non-active");        
             }
+            dr_content.classList.add("menu-active");
         }
-    })
+    }
 }
 
 desserts.onclick = function(e) {
     var de_content = document.getElementById("desserts");
-    if (de_content.classList.contains("menu-non-active")) {
-        de_content.classList.remove("menu-non-active");        
-    }
-    de_content.classList.add("menu-active");
+    
+    for(let i = 0; i < choices.length; i++) {
+        var choice = choices.item(i)
 
-    if (!desserts.classList.contains("choice-active")) {
-        desserts.classList.add("choice-active");
-    }
-
-    Array.prototype.forEach.call(choices, (choice, i) => {
         if (choice != desserts) {
             if (choice.classList.contains("choice-active")) {
                 choice.classList.remove("choice-active");
             }
+        } else {
+            choice.classList.add("choice-active")
         }
-    })
+    }
 
-    Array.prototype.forEach.call(menu_child, (item, i) => {
+    for(let i = 0; i < menu_child.length; i++) {
+        var item = menu_child.item(i)
+
         if (item != de_content) {
             if (item.classList.contains("menu-active")) {
                 item.classList.remove("menu-active");
             }
-
-            if (!item.classList.contains("menu-non-active")) {
-                item.classList.add("menu-non-active");
+            item.classList.add("menu-non-active");
+        } else {
+            if (de_content.classList.contains("menu-non-active")) {
+                de_content.classList.remove("menu-non-active");        
             }
+            de_content.classList.add("menu-active");
         }
-    })
+    }
 }

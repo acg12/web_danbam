@@ -45,7 +45,7 @@ input[type=text], select, textarea, input[type=email]{
   resize: vertical 
 }
 
-input[type=submit] {
+input[type=button] {
   background-color: #4CAF50;
   padding: 12px 20px;
   border: none;
