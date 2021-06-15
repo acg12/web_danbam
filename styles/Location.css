@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
     font-size: 100px;
+    transition: all .5s ease;
 }
 
 #map-cont {
@@ -197,6 +198,7 @@
     
     #banner {
         font-size: 80px;
+        height: 70vh;
     }
 
     .locations {

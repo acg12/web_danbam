@@ -111,19 +111,11 @@ lightbites.onclick = function(e) {
 
         // kalo bukan lightbites content
         if (item != lb_content) {
-            // klo sblmnya active, hilangin
-            if (item.classList.contains("menu-active")) {
-                item.classList.remove("menu-active");
-            }
-            item.classList.add("menu-non-active");
-        } else {
-            // klo sblmnya non active, hilangin
-            if (lb_content.classList.contains("menu-non-active")) {
-                lb_content.classList.remove("menu-non-active");        
-            }
-            item.classList.add("menu-active")
+            $(item).fadeOut();
         }
     }
+    
+    $(lb_content).fadeIn(800);
 }
 
 maincourse.onclick = function(e) {
@@ -145,17 +137,11 @@ maincourse.onclick = function(e) {
         var item = menu_child.item(i)
 
         if (item != mc_content) {
-            if (item.classList.contains("menu-active")) {
-                item.classList.remove("menu-active");
-            }
-            item.classList.add("menu-non-active");
-        } else {
-            if (mc_content.classList.contains("menu-non-active")) {
-                mc_content.classList.remove("menu-non-active");        
-            }
-            mc_content.classList.add("menu-active");
+            $(item).fadeOut();
         }
     }
+
+    $(mc_content).fadeIn(800);
 }
 
 drinks.onclick = function(e) {
@@ -177,17 +163,11 @@ drinks.onclick = function(e) {
         var item = menu_child.item(i)
 
         if (item != dr_content) {
-            if (item.classList.contains("menu-active")) {
-                item.classList.remove("menu-active");
-            }
-            item.classList.add("menu-non-active");
-        } else {
-            if (dr_content.classList.contains("menu-non-active")) {
-                dr_content.classList.remove("menu-non-active");        
-            }
-            dr_content.classList.add("menu-active");
+            $(item).fadeOut();
         }
     }
+
+    $(dr_content).fadeIn(800);
 }
 
 desserts.onclick = function(e) {
@@ -209,15 +189,9 @@ desserts.onclick = function(e) {
         var item = menu_child.item(i)
 
         if (item != de_content) {
-            if (item.classList.contains("menu-active")) {
-                item.classList.remove("menu-active");
-            }
-            item.classList.add("menu-non-active");
-        } else {
-            if (de_content.classList.contains("menu-non-active")) {
-                de_content.classList.remove("menu-non-active");        
-            }
-            de_content.classList.add("menu-active");
+            $(item).hide();
         }
     }
+
+    $(de_content).fadeIn(800);
 }

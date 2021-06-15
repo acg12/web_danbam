@@ -9,6 +9,7 @@
     background-position: center;
     font-size: 100px;
     text-align: center;
+    transition: all .5s ease;
 }
 
 /* promotions picture gallery */
@@ -16,15 +17,17 @@
 #promo-cont {
     position: relative;
     height: 450px;
-    /* background-color: black; */
     width: 100%;
     overflow-x: hidden;
     transition: all .5s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #promotions {
     position: relative;
-    /* width: 100%; */
     height: 400px;
 }
 
@@ -139,6 +142,24 @@
 
 /* menu content */
 
+/* per menu atur displaynya */
+
+#light-bites {
+    display: block;
+}
+
+#main-course {
+    display: none;
+}
+
+#drinks {
+    display: none;
+}
+
+#desserts {
+    display: none;
+}
+
 .foods {
     padding-right: 30px;
 }
@@ -149,16 +170,6 @@
 
 .categ-cont {
     position: relative;
-}
-
-.menu-active {
-    display: block;
-    transition: all .5s ease;
-}
-
-.menu-non-active {
-    display: none;
-    transition: all .5s ease;
 }
 
 .categ-title {
@@ -238,6 +249,7 @@
 @media only screen and (max-width: 969px) {
     #menu-banner {
         font-size: 50px;
+        height: 70vh;
     }
 
     #content {
@@ -305,6 +317,10 @@
 @media only screen and (max-width:460px) {
     #promo-cont {
         height: 300px;
+    }
+
+    #promotions {
+        height: 250px;
     }
 
     .promo-card {

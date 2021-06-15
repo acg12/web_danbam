@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: right;
-    height: 100vh;
+    height: 100%;
 }
 
 #banner {
@@ -12,6 +12,7 @@
     background-position-x: center;
     background-size: cover;
     height: 100vh;
+    transition: all .5s ease;
 }
 
 .info {
@@ -240,8 +241,16 @@
 }
 
 @media only screen and (max-width: 969px) {
-    #banner-text > h1 {
+    #banner {
+        height: 70vh;
+    }
+
+    #banner-text > .title {
         font-size: 60px;
+    }
+
+    #banner-text > .subtitle {
+        font-size: 20px;
     }
 
     #info-img {
@@ -256,6 +265,10 @@
         border-radius: 0;
         padding-left: 4vw;
         width: auto;
+    }
+
+    .info-text > .title {
+        font-size: 40px;
     }
 
     .info-outline {
@@ -285,7 +298,7 @@
         height: auto;
     }
 
-    #recom-title {
+    #recom-title, #loc-title, .info-text > .title {
         font-size: 40px;
     }
 
@@ -355,7 +368,7 @@
     }
 
     #cant-find, #cant-find > a {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     #foot-cont {
