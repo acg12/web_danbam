@@ -16,7 +16,7 @@
 /* banner */
 
 #banner {
-    background-image: url("../assets/Location3_.jpg");
+    background-image: url("../assets/location-banner.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -63,7 +63,9 @@
     height: 270px;
     transition: all 1s ease-in-out;
 }
+
 /* picture 1, 2, 3, 4 */
+
 .picture1 {
     width: 300px;
     height: 200px;
@@ -87,7 +89,7 @@
 .picture3 {
     width: 300px;
     height: 200px;
-    background-image: url("../assets/Location3___.jpeg");
+    background-image: url("../assets/Location3.jpeg");
     background-position: center;
     background-size: cover;
     border-top-left-radius: 25px;
@@ -103,6 +105,7 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
+
 .loc-text {
     color: white;
     font-family: pop-regular;
