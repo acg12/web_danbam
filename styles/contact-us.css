@@ -122,8 +122,13 @@ textarea {
   margin-bottom: 16px;
 }
 
+#q-header {
+  font-family: pop-regular;
+  font-size: 14px;
+}
+
 #quote {
-  padding: 15px 50px;
+  padding: 100px 80px;
   text-align: center;
   justify-content: center;
   background-color: #f8f4e4;
