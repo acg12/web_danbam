@@ -62,7 +62,7 @@ input[type=submit]:hover {
   margin:0 auto;
   border-radius: 5px;
   padding-top: 30px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 label,p {
@@ -142,37 +142,35 @@ textarea {
 }
 
 @media only screen and (max-width: 969px) {
+  #banner {
+    height: 70vh;
+  }
 
-#banner {
-  height: 70vh;
-}
+  #banner-text {
+    height: 80vh;
+  }
 
-#banner-text {
-  height: 80vh;
-}
+  .container {
+    width: 85%;
+    padding-top: 20px;
+  }
 
-.container {
-  width: 85%;
-  padding-top: 20px;
-}
+  .title{
+    font-size: 62px;
+  }
 
-.title{
-  font-size: 62px;
-}
+  .subtitle{
+    font-size: 15px;
+  }
 
-.subtitle{
-  font-size: 15px;
-}
+  #q-content {
+    font-size: 26px;
+    padding: 20px;
+    padding-bottom: 40px;
+  }
 
-#q-content {
-  font-size: 26px;
-  padding: 20px;
-  padding-bottom: 40px;
-}
-
-#foot-cont {
-  position: static;
-  padding-top: 101px;
-}
-
+  #foot-cont {
+    position: static;
+    padding-top: 101px;
+  }
 }
