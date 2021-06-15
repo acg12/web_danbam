@@ -159,11 +159,15 @@ textarea {
   font-size: 15px;
 }
 
+#q-content {
+  font-size: 30px;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
 #foot-cont {
   position: static;
   padding-top: 101px;
 }
-
-
 
 }
