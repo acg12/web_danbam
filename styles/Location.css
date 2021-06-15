@@ -62,17 +62,46 @@
     height: 270px;
     transition: all 1s ease-in-out;
 }
-
-.picture {
+/* picture 1, 2, 3, 4 */
+.picture1 {
     width: 300px;
     height: 200px;
-    background-image: url("../assets/Location1_.jpg");
+    background-image: url("../assets/Location1.jpeg");
     background-position: center;
     background-size: cover;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 
+.picture2 {
+    width: 300px;
+    height: 200px;
+    background-image: url("../assets/Location2.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.picture3 {
+    width: 300px;
+    height: 200px;
+    background-image: url("../assets/Location3___.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.picture4 {
+    width: 300px;
+    height: 200px;
+    background-image: url("../assets/Location4.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
 .loc-text {
     color: white;
     font-family: pop-regular;
