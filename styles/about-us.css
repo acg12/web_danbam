@@ -197,13 +197,12 @@ hr {
 #socials-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .socials-cont {
   padding: 16px;
-  margin: 50px;
   background-color: black;
   border-radius: 35px;
 }
@@ -321,7 +320,6 @@ hr {
   #socials-bottom h6 {
     font-size: 1em;
   }
-
 }
 
 @media screen and (max-width: 768px) {
