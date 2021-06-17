@@ -32,75 +32,71 @@
             </div>
         </div>
     </div>
+    <!-- banner -->
     <div id="banner" class="text-animate">
         <div id="banner-text" class="text-animate">
             <div class="title">Contact Us</div>
             <div class="subtitle">Tell us about your dining experience and what needs to be improved.</div>
         </div>
     </div>
+    <!-- form -->
     <div class="container"> 
-        
         <form name="contactForm" action="#" method="post">
-
+            <!-- name -->
             <label for="name">Name</label>
             <input type="text" placeholder="Full Name" name="name" id="name">
-        
+            <!-- email -->
             <label for="email">Email</label>
             <input type="email" placeholder="Enter Your Email" id="email" name="email">
-            
+            <!-- gender -->
             <label for="gender">Gender</label>
-            <div>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-              </div>
-              
-              <div>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-              </div>
-              
-              <div>
-                <input type="radio" id="nonbinary" name="gender" value="nonbinary">
-                <label for="nonbinary">Non-Binary</label>
-              </div>
-            <label>
- 
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" id="nonbinary" name="gender" value="nonbinary">
+                    <label for="nonbinary">Non-Binary</label>
+                </div>
+            <!-- branch location -->
             <label for="branch">Branch Location</label>
-                <select id="branch">
-                    <option value="" disabled selected>--Not Specified--</option>
-                    <option value="DanBam Senayan Jakarta">DanBam Senayan Jakarta</option>
-                    <option value="DanBam Paragon Jakarta">DanBam Paragon Jakarta</option>
-                    <option value="DanBam Taman Anggrek Jakarta">DanBam Taman Anggrek Jakarta</option>
-                    <option value="DanBam Grand Indonesia Jakarta">DanBam Grand Indonesia Jakarta</option>
-                    <option value="DanBam DP Mall Semarang">DanBam DP Mall Semarang</option>
-                    <option value="DanBam Tunjungan Plaza Surabaya">DanBam Tunjungan Plaza Surabaya</option>
-                    <option value="DanBam Seminyak Village Bali">DanBam Seminyak Village Bali</option>
-                </select>
-            </label>
-      
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
-                
-            <div id="new1">
-                <label>
-                    <input type="checkbox" name="offer" style="margin-bottom:15px"> I want to receive exclusive offers, news, and updates via email. 
-                </label>
+            <select id="branch">
+                <option value="" disabled selected>--Not Specified--</option>
+                <option value="senayan-jkt">DanBam Senayan Jakarta</option>
+                <option value="paragon-jkt">DanBam Paragon Jakarta</option>
+                <option value="ta-jkt">DanBam Taman Anggrek Jakarta</option>
+                <option value="gi-jkt">DanBam Grand Indonesia Jakarta</option>
+                <option value="dp-smg">DanBam DP Mall Semarang</option>
+                <option value="tp-sby">DanBam Tunjungan Plaza Surabaya</option>
+                <option value="sv-bali">DanBam Seminyak Village Bali</option>
+            </select>
+            <!-- message for danbam -->
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <!-- checkbox -->
+            <div id="cb-cont">
+                <input type="checkbox" id="cb-offer" name="offer">
+                <label for="offer">I want to receive exclusive offers, news, and updates via email.</label>
             </div>
-                
-            <div id="new2">
-                <input type="button" value="Submit" onclick=validateForm()>
+            <!-- buttons -->
+            <div id="btn-cont">
+                <input type="reset" id="btn-reset" value="Reset">
+                <input type="button" id="btn-submit" value="Submit" onclick=validateForm()>
             </div>
-           
         </form>
     </div>
-    
+    <!-- quotes -->
     <div id="quote">
         <div id="q-header">DANBAM</div>
         <div id="q-content" class="text-animate">
-          The most unhappy customers are our greatest source of learning.
+            The most unhappy customers are our greatest source of learning.
         </div>
-      </div>
-
+    </div>
+    <!-- footer -->
     <div id="foot-cont">
         <div id="footer" class="flex-col flex-center">
             <div id="foot-up" class="flex-row flex-center">
