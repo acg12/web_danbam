@@ -1,6 +1,6 @@
 # DanBam
 
-This is a final semestral project for our Human Computer and Interaction course at BINUS University. We were asked to design a logo and an interactive website consisting of 5 pages using HTML, CSS, and JavaScript.
+This is a **final semestral project** for our **Human Computer and Interaction** course at **BINUS University**. We were asked to design a logo and an interactive **website** consisting of 5 pages using **HTML, CSS, and JavaScript**.
 
 ## Intro
 DanBam is a restaurant that has gone viral in Korea. Currently, DanBam has several branches all over Korea. DanBam Restaurant offers a menu of traditional Korean food packaged in a modern way.
